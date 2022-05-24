@@ -2,7 +2,7 @@
 The neural network consists of 3 layers:
 + input-layer: 784 neurons  --> pixels of the 28\*28 image
 + hidden-layer: 24 neurons  
-+ output-layer: 10 neurons  --> matching with the numbers (0 - 9)
++ output-layer: 10 neurons  --> matching with the numbers (0 - 9) <br/>
 As activation function, sigmoid is used.
 
 ### Backpropagation
@@ -29,4 +29,4 @@ Notations: <br/>
 Now we have 3 simpler equations to solve. <br/>
 
 ![](https://latex.codecogs.com/svg.image?\color{white}\frac{\partial&space;C}{\partial&space;n}&space;=&space;2(output[x]&space;-&space;desiredOutput[x]))
-![]
+![](https://latex.codecogs.com/svg.image?\color{white}\frac{\partial&space;n}{\partial&space;z}&space;=&space;sigmoid'(z))
