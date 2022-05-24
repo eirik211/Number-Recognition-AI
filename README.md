@@ -26,4 +26,4 @@ Notations: <br/>
 
 Now we have 3 simpler equations to solve. <br/>
 
-![](https://latex.codecogs.com/svg.image?\color{white}\frac{\partial&space;C}{\partial&space;n}&space;=&space;2(output[n]&space;-&space;desiredOutput[n]))
+![](https://latex.codecogs.com/svg.image?\color{white}\frac{\partial&space;C}{\partial&space;n}&space;=&space;2(output[x]&space;-&space;desiredOutput[x]))
