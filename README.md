@@ -23,7 +23,7 @@ In other words: find the partial-derivative of the cost function with respect to
  
 
 
-This can easily be done by applying the chain rule.<br/>
+This can easily be done by applying the chain rule. Note: `zh` = `nh` before the sigmoid function <br/>
 
 
 
