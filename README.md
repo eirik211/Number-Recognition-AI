@@ -12,7 +12,7 @@ I use a process called backpropagation to adjust the weights.
 After the first images has gone trough the neural net, the output is very likely to be completely false, since the weights were initialized randomly.
 To give this falseness a value we use the cost function.
 
-$$C(...)=\sum_{n=0}^{9}(output[n]-desiredOutput[n])^{2}$$
+$$\begin{flushleft}C(...)=\sum_{n=0}^{9}(output[n]-desiredOutput[n])^{2}$$
 ### Adjusting the weights between the hidden- and the output-layer
 
 For the sake of simplicity, let's first look at **one** weight and call it `wx`. It creates a connection between `nh` (neuron somewhere in the hidden layer) and `no` (neuron somewhere in the output layer).<br/>
