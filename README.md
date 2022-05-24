@@ -14,10 +14,12 @@ To set give this falseness a value we use the cost function.
 
 ![Cost function](https://latex.codecogs.com/svg.image?\color{white}&space;C(...)&space;=&space;\sum_{n=0}^{9}(output[n]&space;-&space;desiredOutput[n])^{2})
 
-Now we need to find out how sensitive the cost is to small changes to each weight, in order to adjust it. <br/>
-In other words: find the partial-derivative of the cost function in respect to the weight.<br/>
+For the sake of simplicity, let's first look at **one** weight and call it `wx`. It creates a connection between `nh` (neuron somewhere in the hidden layer) and `no` (neuron somewhere in the output layer). <br/>
 
-For the sake of simplicity, let's first look at **one** weight and call it `wx`. It creates a connection between `nh` (neuron somewhere in the hidden layer) and `no` (neuron somewhere in the output layer).
+Now we need to find out how sensitive the cost is to small changes to `wx`, in order to adjust it. <br/>
+In other words: find the partial-derivative of the cost function with respect to `wx`.<br/>
+
+![](https://latex.codecogs.com/svg.image?\color{white}&space;\frac{\partial&space;C}{\partial&space;wx}&space;&space;=&space;?)
  
 
 
