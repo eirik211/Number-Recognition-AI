@@ -7,6 +7,43 @@ The neural network consists of 3 layers:
 As activation function, sigmoid is used.
 
 ## Backpropagation
+I use a proccess called backpropagation to adjust the weights.
+
+After an images has gone trough the neural net, the output is very likely to be completely false, since the weights are initialized randomly.
+To set give this falseness a value we use the cost function.
+
+![Cost function](https://latex.codecogs.com/svg.image?\color{white}&space;C(...)&space;=&space;\sum_{n=0}^{9}(output[n]&space;-&space;desiredOutput[n])^{2})
+
+Now we need to find out how sensitive the cost is to small changes to each weight, in order to adjust it. <br/>
+In other words: find the partial-derivative of the cost function in respect to the weight.<br/>
+
+For the sake of simplicity, let's first look at one weight and call it `wx`
+
+
+
+This can easily be done by applying the chain rule.<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> v
+
+Ignore
 Notations: <br/> 
 + n = neuron<br/> 
 + z = n before the activation function <br/> 
