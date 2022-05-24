@@ -20,6 +20,7 @@ Notations: <br/>
 + n = neuron <br/> 
 + z = n before the activation function <br/> 
 + w = weight <br/>
+<br/>
 
 ![](https://latex.codecogs.com/svg.image?\color{white}\frac{\partial&space;C}{\partial&space;w}&space;=&space;\frac{\partial&space;C}{\partial&space;n}\frac{\partial&space;n}{\partial&space;z}\frac{\partial&space;z}{\partial&space;w})
 
