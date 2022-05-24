@@ -55,7 +55,7 @@ Now we can just apply the chain rule like previously. <br/>
 
 
 $$\frac{\partial C}{\partial wy} = \frac{\partial C}{\partial nh} \frac{\partial nh}{\partial zh} \frac{\partial zh}{\partial wy}$$
-$$\frac{\partial C}{\partial wy} = sigmoid'(zh)ni$$
+$$\frac{\partial C}{\partial wy} = (\sum_{i=0}^{9} 2(o_{i} - desiredOutput_{i})sigmoid'(z_{i})nh) * sigmoid'(zh) * ni$$
 
 Subtract a fraction of this value from `wy`... 
 
