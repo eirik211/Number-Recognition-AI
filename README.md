@@ -16,9 +16,13 @@ Now we need to find out how sensitive the cost is to small changes to each weigh
 In other words: find the partial-derivative of the cost function in respect to the weight.
 
 This can easily be done by applying the chain rule.<br/>
-Note: <br/> 
-n = neuron <br/> 
-z = n before the activation function <br/> 
-w = weight <br/>
+Notations: <br/> 
++ n = neuron <br/> 
++ z = n before the activation function <br/> 
++ w = weight <br/>
 
 ![](https://latex.codecogs.com/svg.image?\color{white}\frac{\partial&space;C}{\partial&space;w}&space;=&space;\frac{\partial&space;C}{\partial&space;n}\frac{\partial&space;n}{\partial&space;z}\frac{\partial&space;z}{\partial&space;w})
+
+Now we have 3 simpler equations to solve. <br/>
+
+![](https://latex.codecogs.com/svg.image?\color{white}\frac{\partial&space;C}{\partial&space;n}&space;=&space;C'(...)&space;=&space;2(output[n]&space;-&space;desiredOutput[n]))
