@@ -64,7 +64,10 @@ Subtract a fraction of this value from `wy`... <br/><br/>
 <br/><br/>
 
 Repeat this procedure for every weight connecting the input- with the hidden-layer and we're done!
+With my configuration I do this 3 times for 50000 images each.
 
+### Results
+![](https://drive.google.com/file/d/1CB1EgtA3UfGmTb0EVjMIlMqYsjTvuqwR/view?usp=sharing)
 
 
 
