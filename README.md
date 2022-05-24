@@ -27,8 +27,8 @@ This can easily be done by applying the chain rule (because we could see every s
 
 $$\frac{\partial C}{\partial wx}=\frac{\partial C}{\partial no}\frac{\partial no}{\partial zo}\frac{\partial zo}{\partial wx}$$
 
-$$\frac{\partial C}{\partial no} = 2(no - desiredOutput)$$<br/><br/>
-$$\frac{\partial no}{\partial zo} = sigmoid'(zo)$$<br/><br/>
+$$\frac{\partial C}{\partial no} = 2(no - desiredOutput)$$<br/>
+$$\frac{\partial no}{\partial zo} = sigmoid'(zo)$$<br/>
 $$\frac{\partial zo}{\partial wx} = nh$$<br/>
 
 Putting everything together...
