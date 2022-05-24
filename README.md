@@ -39,7 +39,7 @@ The next step is to multiply the just calculated value with a learning rate `lr 
 We use this learning rate to prevent the net from learning too fast, because it leads to bad results.
 
 
-![](https://latex.codecogs.com/svg.image?\color{white}&space;wx&space;=&space;wx&space;-&space;lr\frac{\partial&space;C}{\partial&space;wx})
+![](https://latex.codecogs.com/svg.image?\color{white}wx&space;=&space;wx&space;-&space;lr&space;*&space;2(no&space;-&space;desiredOutput)sigmoid'(zo)nh)
 
 This proccess is then repeated for every other weight, that is connecting the hidden- with the output-layer.
 
