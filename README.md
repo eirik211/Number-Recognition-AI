@@ -27,19 +27,19 @@ This can easily be done by applying the chain rule (because we could see every s
 
 $$\frac{\partial C}{\partial wx}=\frac{\partial C}{\partial no}\frac{\partial no}{\partial zo}\frac{\partial zo}{\partial wx}$$
 
-![](https://latex.codecogs.com/svg.image?\color{white}&space;\frac{\partial&space;C}{\partial&space;no}&space;=&space;2(no&space;-&space;desiredOutput))<br/><br/>
-![](https://latex.codecogs.com/svg.image?\color{white}&space;\frac{\partial&space;no}{\partial&space;zo}&space;=&space;sigmoid'(zo))<br/><br/>
-![](https://latex.codecogs.com/svg.image?\color{white}&space;\frac{\partial&space;zo}{\partial&space;wx}&space;=&space;nh)<br/>
+$$\frac{\partial C}{\partial no} = 2(no - desiredOutput)$$<br/><br/>
+$$\frac{\partial no}{\partial zo} = sigmoid'(zo)$$<br/><br/>
+$$\frac{\partial zo}{\partial wx} = nh$$<br/>
 
 Putting everything together...
 
-![](https://latex.codecogs.com/svg.image?\color{white}&space;\frac{\partial&space;C}{\partial&space;wx}&space;=&space;2(no&space;-&space;desiredOutput)sigmoid'(zo)nh)
+$$\frac{\partial C}{\partial wx} = 2(no - desiredOutput)sigmoid'(zo)nh$$
 
 The next step is to multiply the just calculated value with a learning rate `lr = 0.01` and subtract it from `wx`. <br/>
 We use this learning rate to prevent the net from learning too fast, because it leads to bad results.
 
 
-![](https://latex.codecogs.com/svg.image?\color{white}wx&space;=&space;wx&space;-&space;lr&space;*&space;2(no&space;-&space;desiredOutput)sigmoid'(zo)nh)
+$$wx = wx - lr * 2(no - desiredOutput)sigmoid'(zo)nh$$
 
 This proccess is then repeated for every other weight, that is connecting the hidden- with the output-layer.
 
@@ -48,21 +48,21 @@ Let's once again look at just one weight and call it `wy`. It connects `ni` (neu
 This procedure is very similar to the one above. The only difference is, that the partial derivative of the cost with respect to `nh` is not as easy to calculate. Since `nh` is connected to every neuron of the output-layer, we have to sum up the impact it has trough each weight-connection to the output layer.
 
 Further notations: `o` = output-layer, `z` = output-layer before sigmoid was applied, `zh` = `nh` before sigmoid was applied <br/><br/>
-![](https://latex.codecogs.com/svg.image?\color{white}&space;\frac{\partial&space;C}{\partial&space;nh}&space;=&space;&space;\sum_{i=0}^{9}&space;\frac{\partial&space;C}{\partial&space;o_{i}}&space;\frac{\partial&space;o_{i}}{\partial&space;z_{i}}&space;\frac{\partial&space;z_{i}}{\partial&space;nh}&space;)
+$$\frac{\partial C}{\partial nh} =  \sum_{i=0}^{9} \frac{\partial C}{\partial o_{i}} \frac{\partial o_{i}}{\partial z_{i}} \frac{\partial z_{i}}{\partial nh} $$
 <br/><br/>
-![](https://latex.codecogs.com/svg.image?\color{white}\frac{\partial&space;C}{\partial&space;nh}&space;=&space;\sum_{i=0}^{9}&space;2(o_{i}&space;-&space;desiredOutput_{i})sigmoid'(z_{i})nh)
+$$\frac{\partial C}{\partial nh} \sum_{i=0}^{9} 2(o_{i} - desiredOutput_{i})sigmoid'(z_{i})nh$$
 
 Now we can just apply the chain rule like previously. <br/>
 
 
-![](https://latex.codecogs.com/svg.image?\color{white}&space;\frac{\partial&space;C}{\partial&space;wy}&space;=&space;\frac{\partial&space;C}{\partial&space;nh}&space;\frac{\partial&space;nh}{\partial&space;zh}&space;\frac{\partial&space;zh}{\partial&space;wy})
+$$\frac{\partial C}{\partial wy} \frac{\partial C}{\partial nh} \frac{\partial nh}{\partial zh} \frac{\partial zh}{\partial wy}$$
 <br/><br/>
-![](https://latex.codecogs.com/svg.image?\color{white}\frac{\partial&space;C}{\partial&space;wy}&space;=&space;(\sum_{i=0}^{9}&space;2(o_{i}&space;-&space;desiredOutput_{i})sigmoid'(z_{i})nh)sigmoid'(zh)ni)
+$$\frac{\partial C}{\partial wy} (\sum_{i=0}^{9} 2(o_{i} - desiredOutput_{i})sigmoid'(z_{i})nh)sigmoid'(zh)ni$$
 <br/><br/>
 
 Subtract a fraction of this value from `wy`... <br/><br/>
 
-![](https://latex.codecogs.com/svg.image?\color{white}&space;w&space;=&space;w&space;-&space;lr(\sum_{i=0}^{9}&space;2(o_{i}&space;-&space;desiredOutput_{i})sigmoid'(z_{i})nh)sigmoid'(zh)ni)
+$$w = w - lr(\sum_{i=0}^{9} 2(o_{i} - desiredOutput_{i})sigmoid'(z_{i})nh)sigmoid'(zh)ni)$$
 <br/><br/>
 
 Repeat this procedure for every weight connecting the input- with the hidden-layer and we're done!
