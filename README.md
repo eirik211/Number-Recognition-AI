@@ -58,9 +58,12 @@ Now we can just apply the chain rule like previously. <br/>
 ![](https://latex.codecogs.com/svg.image?\color{white}&space;\frac{\partial&space;C}{\partial&space;wy}&space;=&space;(\sum_{i=0}^{9}\frac{\partial&space;C}{\partial&space;o_{i}}\frac{\partial&space;o_{i}}{\partial&space;z_{i}}\frac{\partial&space;z_{i}}{\partial&space;nh})sigmoid'(zh)ni)
 <br/><br/>
 
-Subtract a fraction of this value from wy... <br/><br/>
+Subtract a fraction of this value from `wy`... <br/><br/>
 
 ![](https://latex.codecogs.com/svg.image?\color{white}&space;w&space;=&space;w&space;-&space;lr(\sum_{i=0}^{9}\frac{\partial&space;C}{\partial&space;o_{i}}\frac{\partial&space;o_{i}}{\partial&space;z_{i}}\frac{\partial&space;z_{i}}{\partial&space;nh})sigmoid'(zh)ni)
+<br/><br/>
+
+Repeat this procedure for every weight connecting the input- with the hidden-layer and we're done!
 
 
 
