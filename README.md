@@ -56,7 +56,11 @@ Now we can just apply the chain rule like previously. <br/>
 ![](https://latex.codecogs.com/svg.image?\color{white}&space;\frac{\partial&space;C}{\partial&space;wy}&space;=&space;\frac{\partial&space;C}{\partial&space;nh}&space;\frac{\partial&space;nh}{\partial&space;zh}&space;\frac{\partial&space;zh}{\partial&space;wy})
 <br/><br/>
 ![](https://latex.codecogs.com/svg.image?\color{white}&space;\frac{\partial&space;C}{\partial&space;wy}&space;=&space;(\sum_{i=0}^{9}\frac{\partial&space;C}{\partial&space;o_{i}}\frac{\partial&space;o_{i}}{\partial&space;z_{i}}\frac{\partial&space;z_{i}}{\partial&space;nh})sigmoid'(zh)ni)
+<br/><br/>
 
+Subtract a fraction of this value from wy... <br/><br/>
+
+![](https://latex.codecogs.com/svg.image?\color{white}&space;w&space;=&space;w&space;-&space;lr(\sum_{i=0}^{9}\frac{\partial&space;C}{\partial&space;o_{i}}\frac{\partial&space;o_{i}}{\partial&space;z_{i}}\frac{\partial&space;z_{i}}{\partial&space;nh})sigmoid'(zh)ni)
 
 
 
