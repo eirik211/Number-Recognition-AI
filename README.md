@@ -49,6 +49,8 @@ The next step is to subtract a small fraction of the just calculated value from 
 
 We repeat this proccess for every weight and that's the first weight-matrix done!
 
+### Weights between the input- and hidden-layer
+
 
 
 
