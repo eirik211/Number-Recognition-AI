@@ -27,6 +27,7 @@ In other words: find the partial-derivative of the cost function in respect to t
 
 This can easily be done by applying the chain rule.<br/>
 
+### Weights between the hidden- and output-layer
 ![](https://latex.codecogs.com/svg.image?\color{white}\frac{\partial&space;C}{\partial&space;w}&space;=&space;\frac{\partial&space;C}{\partial&space;n}\frac{\partial&space;n}{\partial&space;z}\frac{\partial&space;z}{\partial&space;w})
 <br/>
 
@@ -42,6 +43,8 @@ Now we have 3 simpler equations to solve. <br/>
 Putting everything together...
 
 ![](https://latex.codecogs.com/svg.image?\color{white}\frac{\partial&space;C}{\partial&space;w}&space;=&space;2(output[i]&space;-&space;desiredOutput[i])sigmoid'(z)n[-1])
+
+
 
 
 
