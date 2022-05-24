@@ -6,7 +6,7 @@ The neural network consists of 3 layers:
 <br/> 
 As activation function, sigmoid is used.
 
-### Backpropagation
+## Backpropagation
 Notations: <br/> 
 + n = neuron<br/> 
 + z = n before the activation function <br/> 
