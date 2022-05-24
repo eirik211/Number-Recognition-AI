@@ -50,6 +50,11 @@ This procedure is very similar to the one above. The only difference is, that th
 Notations: o = output-layer, z = output-layer before sigmoid was applied <br/><br/>
 ![](https://latex.codecogs.com/svg.image?\color{white}&space;\frac{\partial&space;C}{\partial&space;nh}&space;=&space;&space;\sum_{i=0}^{9}&space;\frac{\partial&space;C}{\partial&space;o_{i}}&space;\frac{\partial&space;o_{i}}{\partial&space;z_{i}}&space;\frac{\partial&space;z_{i}}{\partial&space;nh}&space;)
 
+Now we can just apply the chain rule like previously. <br/>
+Note: `zh` = `nh` before sigmoid was applied <br/>
+
+![](https://latex.codecogs.com/svg.image?\frac{\partial&space;C}{\partial&space;wy}&space;=&space;\frac{\partial&space;C}{\partial&space;nh}&space;\frac{\partial&space;nh}{\partial&space;zh}&space;\frac{\partial&space;zh}{\partial&space;wy})
+
 
 
 
