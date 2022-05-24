@@ -3,6 +3,7 @@ The neural network consists of 3 layers:
 + input-layer: 784 neurons  --> pixels of the 28\*28 image
 + hidden-layer: 24 neurons  
 + output-layer: 10 neurons  --> matching with the numbers (0 - 9)
+As activation function, sigmoid is used.
 
 ### Backpropagation
 I use a proccess called backpropagation to adjust the weights.
@@ -20,6 +21,7 @@ Notations: <br/>
 + n = neuron <br/> 
 + z = n before the activation function <br/> 
 + w = weight <br/>
++ x = index of the neuron which the weight is connected to
 <br/>
 
 ![](https://latex.codecogs.com/svg.image?\color{white}\frac{\partial&space;C}{\partial&space;w}&space;=&space;\frac{\partial&space;C}{\partial&space;n}\frac{\partial&space;n}{\partial&space;z}\frac{\partial&space;z}{\partial&space;w})
@@ -27,3 +29,4 @@ Notations: <br/>
 Now we have 3 simpler equations to solve. <br/>
 
 ![](https://latex.codecogs.com/svg.image?\color{white}\frac{\partial&space;C}{\partial&space;n}&space;=&space;2(output[x]&space;-&space;desiredOutput[x]))
+![]
