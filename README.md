@@ -45,7 +45,7 @@ Putting everything together...
 ![](https://latex.codecogs.com/svg.image?\color{white}\frac{\partial&space;C}{\partial&space;w}&space;=&space;2(output[i]&space;-&space;desiredOutput[i])sigmoid'(z)n[-1])
 
 The next step is to subtract a small fraction of the just calculated value from the corresponding weight.<br/><br/>
-![](https://latex.codecogs.com/svg.image?\color{white}w&space;=&space;w&space;-&space;lr\frac{\partial&space;C}{\partial&space;w})
+![](https://latex.codecogs.com/svg.image?\color{white}w&space;=&space;w&space;-&space;r\frac{\partial&space;C}{\partial&space;w})
 
 We repeat this proccess for every weight and that's the first weight-matrix done!
 
