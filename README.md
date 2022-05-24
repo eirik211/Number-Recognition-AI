@@ -11,3 +11,6 @@ After an images has gone trough the neural net, the output is very likely to be 
 To set give this falseness a value we use the cost function.
 
 ![Cost function](https://latex.codecogs.com/svg.image?\color{white}&space;C(...)&space;=&space;\sum_{n=0}^{9}(output[n]&space;-&space;desiredOutput[n])^{2})
+
+Now we need to find out how sensitive the cost is to small changes to each weight, in order to adjust it.
+In other words: find the partial-derivative of the cost function in respect to the weight.
