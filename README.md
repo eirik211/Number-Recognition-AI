@@ -25,7 +25,7 @@ $$\frac{\partial C}{\partial wx}=?$$
  
 This can easily be done by applying the chain rule (because we could see every step of forwardpropagation as a function). Note: `zo` = `no` before the sigmoid function was applied.<br/>
 
-![](https://latex.codecogs.com/svg.image?\color{white}&space;\frac{\partial&space;C}{\partial&space;wx}&space;=&space;\frac{\partial&space;C}{\partial&space;no}&space;\frac{\partial&space;no}{\partial&space;zo}&space;\frac{\partial&space;zo}{\partial&space;wx})
+$$\frac{\partial C}{\partial wx}=\frac{\partial C}{\partial no}\frac{\partial no}{\partial zo}\frac{\partial zo}{\partial wx}$$
 
 ![](https://latex.codecogs.com/svg.image?\color{white}&space;\frac{\partial&space;C}{\partial&space;no}&space;=&space;2(no&space;-&space;desiredOutput))<br/><br/>
 ![](https://latex.codecogs.com/svg.image?\color{white}&space;\frac{\partial&space;no}{\partial&space;zo}&space;=&space;sigmoid'(zo))<br/><br/>
