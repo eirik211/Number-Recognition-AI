@@ -56,14 +56,11 @@ Now we can just apply the chain rule like previously. <br/>
 
 
 $$\frac{\partial C}{\partial wy} \frac{\partial C}{\partial nh} \frac{\partial nh}{\partial zh} \frac{\partial zh}{\partial wy}$$
-<br/><br/>
 $$\frac{\partial C}{\partial wy} (\sum_{i=0}^{9} 2(o_{i} - desiredOutput_{i})sigmoid'(z_{i})nh)sigmoid'(zh)ni$$
-<br/><br/>
 
-Subtract a fraction of this value from `wy`... <br/><br/>
+Subtract a fraction of this value from `wy`... 
 
 $$w = w - lr(\sum_{i=0}^{9} 2(o_{i} - desiredOutput_{i})sigmoid'(z_{i})nh)sigmoid'(zh)ni)$$
-<br/><br/>
 
 Repeat this procedure for every weight connecting the input- with the hidden-layer and we're done!
 With my configuration I do this 3 times for 50000 images each.
