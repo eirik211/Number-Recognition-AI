@@ -44,6 +44,8 @@ We use this learning rate to prevent the net from learning too fast, because it 
 This proccess is then repeated for every other weight, that is connecting the hidden- with the output-layer.
 
 ### Adjusting the weights between the input- and the hidden-layer
+Let's once again look at just one weight and call it `wy`. It connects `ni` (neuron in the input layer) and `nh` (neuron in the hidden layer).
+This procedure is very similar to the one above. The only difference is, that the partial derivative of the cost with respect to `nh` is not as easy to calculate.
 
 
 
