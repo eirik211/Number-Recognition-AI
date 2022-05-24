@@ -9,7 +9,7 @@ As activation function, sigmoid is used.
 ## Backpropagation
 I use a proccess called backpropagation to adjust the weights.
 
-After an images has gone trough the neural net, the output is very likely to be completely false, since the weights are initialized randomly.
+After the first images has gone trough the neural net, the output is very likely to be completely false, since the weights are initialized randomly.
 To set give this falseness a value we use the cost function.
 
 ![Cost function](https://latex.codecogs.com/svg.image?\color{white}&space;C(...)&space;=&space;\sum_{n=0}^{9}(output[n]&space;-&space;desiredOutput[n])^{2})
