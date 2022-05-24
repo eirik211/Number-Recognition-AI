@@ -26,6 +26,8 @@ This can easily be done by applying the chain rule (because we could see every s
 
 $$\frac{\partial C}{\partial wx}=\frac{\partial C}{\partial no}\frac{\partial no}{\partial zo}\frac{\partial zo}{\partial wx}$$
 
+Now we have 3 simpler equations to solve.
+
 $$\frac{\partial C}{\partial no} = 2(no - desiredOutput)$$
 
 $$\frac{\partial no}{\partial zo} = sigmoid'(zo)$$
