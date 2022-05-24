@@ -38,7 +38,7 @@ Now we have 3 simpler equations to solve. <br/>
 ![](https://latex.codecogs.com/svg.image?\color{white}\frac{\partial&space;n}{\partial&space;z}&space;=&space;sigmoid'(z))
 <br/><br/>
 ![](https://latex.codecogs.com/svg.image?\color{white}\frac{\partial&space;z}{\partial&space;w}&space;=&space;n[-1])
-<br/><br/>
+<br/>
 
 Putting everything together...
 
