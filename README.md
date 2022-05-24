@@ -47,11 +47,11 @@ This proccess is then repeated for every other weight, that is connecting the hi
 Let's once again look at just one weight and call it `wy`. It connects `ni` (neuron in the input layer) and `nh` (neuron in the hidden layer).
 This procedure is very similar to the one above. The only difference is, that the partial derivative of the cost with respect to `nh` is not as easy to calculate. Since `nh` is connected to every neuron of the output-layer, we have to sum up the impact it has trough each weight-connection to the output layer.
 
-Notations: o = output-layer, z = output-layer before sigmoid was applied <br/><br/>
+Further notations: `o` = output-layer, `z` = output-layer before sigmoid was applied, `zh` = `nh` before sigmoid was applied <br/><br/>
 ![](https://latex.codecogs.com/svg.image?\color{white}&space;\frac{\partial&space;C}{\partial&space;nh}&space;=&space;&space;\sum_{i=0}^{9}&space;\frac{\partial&space;C}{\partial&space;o_{i}}&space;\frac{\partial&space;o_{i}}{\partial&space;z_{i}}&space;\frac{\partial&space;z_{i}}{\partial&space;nh}&space;)
 
 Now we can just apply the chain rule like previously. <br/>
-Note: `zh` = `nh` before sigmoid was applied <br/>
+
 
 ![](https://latex.codecogs.com/svg.image?\color{white}&space;\frac{\partial&space;C}{\partial&space;wy}&space;=&space;\frac{\partial&space;C}{\partial&space;nh}&space;\frac{\partial&space;nh}{\partial&space;zh}&space;\frac{\partial&space;zh}{\partial&space;wy})
 <br/><br/>
