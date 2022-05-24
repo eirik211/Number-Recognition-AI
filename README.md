@@ -21,7 +21,7 @@ For the sake of simplicity, let's first look at **one** weight and call it `wx`.
 Now we need to find out how sensitive the cost is to small changes in `wx`, in order to adjust it. <br/>
 In other words: find the partial-derivative of the cost function with respect to `wx`.<br/>
 
-![](https://latex.codecogs.com/svg.image?\color{white}&space;\frac{\partial&space;C}{\partial&space;wx}&space;&space;=&space;?)
+$$\frac{\partial C}{\partial wx}=?$$
  
 This can easily be done by applying the chain rule (because we could see every step of forwardpropagation as a function). Note: `zo` = `no` before the sigmoid function was applied.<br/>
 
