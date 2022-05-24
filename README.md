@@ -18,16 +18,29 @@ In other words: find the partial-derivative of the cost function in respect to t
 
 This can easily be done by applying the chain rule.<br/>
 Notations: <br/> 
-+ n = neuron <br/> 
++ n = neuron, n[-1] = neuron of the previous layer <br/> 
 + z = n before the activation function <br/> 
 + w = weight <br/>
 + x = index of the neuron which the weight is connected to
 <br/>
 
 ![](https://latex.codecogs.com/svg.image?\color{white}\frac{\partial&space;C}{\partial&space;w}&space;=&space;\frac{\partial&space;C}{\partial&space;n}\frac{\partial&space;n}{\partial&space;z}\frac{\partial&space;z}{\partial&space;w})
+<br/>
 
 Now we have 3 simpler equations to solve. <br/>
 
 ![](https://latex.codecogs.com/svg.image?\color{white}\frac{\partial&space;C}{\partial&space;n}&space;=&space;2(output[x]&space;-&space;desiredOutput[x]))
 <br/><br/>
 ![](https://latex.codecogs.com/svg.image?\color{white}\frac{\partial&space;n}{\partial&space;z}&space;=&space;sigmoid'(z))
+<br/><br/>
+![](https://latex.codecogs.com/svg.image?\color{white}\frac{\partial&space;z}{\partial&space;w}&space;=&space;n[-1])
+
+
+
+
+
+
+
+
+
+
