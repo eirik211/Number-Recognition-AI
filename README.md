@@ -67,8 +67,6 @@ With my configuration I do this 3 times for 50000 images each.
 ## Results
 ![](https://drive.google.com/uc?export=view&id=1CB1EgtA3UfGmTb0EVjMIlMqYsjTvuqwR)
 
-$$\sum_{i=0}^{9}i*2$$
-
 
 
 
