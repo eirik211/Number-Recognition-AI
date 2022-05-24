@@ -17,7 +17,7 @@ To set give this falseness a value we use the cost function.
 Now we need to find out how sensitive the cost is to small changes to each weight, in order to adjust it. <br/>
 In other words: find the partial-derivative of the cost function in respect to the weight.<br/>
 
-For the sake of simplicity, let's first look at one weight and call it `wx`. `wx` creates a connection between `nh` (hidden layer) and `no` (output layer).
+For the sake of simplicity, let's first look at one weight and call it `wx`. `wx` creates a connection between `nh` (neuron in the hidden layer) and `no` (neuron in the output layer).
  
 
 
