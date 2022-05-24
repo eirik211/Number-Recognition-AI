@@ -12,7 +12,7 @@ Notations: <br/>
 + z = n before the activation function <br/> 
 + w = weight <br/>
 + x = index of the neuron which the weight is connected to
-+ [-x] x =  layers away from the output
++ [-x] = x layers away from the output
 <br/>
 
 I use a proccess called backpropagation to adjust the weights.
@@ -32,11 +32,16 @@ This can easily be done by applying the chain rule.<br/>
 
 Now we have 3 simpler equations to solve. <br/>
 
-![](https://latex.codecogs.com/svg.image?\color{white}\frac{\partial&space;C}{\partial&space;n}&space;=&space;2(output[x]&space;-&space;desiredOutput[x]))
+![](https://latex.codecogs.com/svg.image?\color{white}\frac{\partial&space;C}{\partial&space;n}&space;=&space;2(output[i]&space;-&space;desiredOutput[i]))
 <br/><br/>
 ![](https://latex.codecogs.com/svg.image?\color{white}\frac{\partial&space;n}{\partial&space;z}&space;=&space;sigmoid'(z))
 <br/><br/>
 ![](https://latex.codecogs.com/svg.image?\color{white}\frac{\partial&space;z}{\partial&space;w}&space;=&space;n[-1])
+<br/><br/>
+
+Putting everything together...
+
+![](https://latex.codecogs.com/svg.image?\color{white}\frac{\partial&space;C}{\partial&space;w}&space;=&space;2(output[i]&space;-&space;desiredOutput[i])sigmoid'(z)n[-1])
 
 
 
