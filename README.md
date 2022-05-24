@@ -49,7 +49,6 @@ This procedure is very similar to the one above. The only difference is, that th
 
 Further notations: `o` = output-layer, `z` = output-layer before sigmoid was applied, `zh` = `nh` before sigmoid was applied <br/><br/>
 $$\frac{\partial C}{\partial nh} =  \sum_{i=0}^{9} \frac{\partial C}{\partial o_{i}} \frac{\partial o_{i}}{\partial z_{i}} \frac{\partial z_{i}}{\partial nh} $$
-<br/><br/>
 $$\frac{\partial C}{\partial nh} \sum_{i=0}^{9} 2(o_{i} - desiredOutput_{i})sigmoid'(z_{i})nh$$
 
 Now we can just apply the chain rule like previously. <br/>
