@@ -29,7 +29,7 @@ This can easily be done by applying the chain rule. Note: `zo` = `no` before the
 
 ![](https://latex.codecogs.com/svg.image?\color{white}&space;\frac{\partial&space;C}{\partial&space;no}&space;=&space;2(no&space;-&space;desiredOutput))<br/><br/>
 ![](https://latex.codecogs.com/svg.image?\color{white}&space;\frac{\partial&space;no}{\partial&space;zo}&space;=&space;sigmoid'(zo))<br/><br/>
-![](https://latex.codecogs.com/svg.image?\color{white}&space;\frac{\partial&space;zo}{\partial&space;wx}&space;=&space;nh)<br/><br/>
+![](https://latex.codecogs.com/svg.image?\color{white}&space;\frac{\partial&space;zo}{\partial&space;wx}&space;=&space;nh)<br/>
 
 Putting everything together...
 
