@@ -65,7 +65,7 @@ Repeat this procedure for every weight connecting the input- with the hidden-lay
 With my configuration I do this 3 times for 50000 images each.
 
 ## Results
-![](https://drive.google.com/uc?export=view&id=1CB1EgtA3UfGmTb0EVjMIlMqYsjTvuqwR)
+![Results](https://drive.google.com/uc?export=view&id=1CB1EgtA3UfGmTb0EVjMIlMqYsjTvuqwR)
 
 
 
