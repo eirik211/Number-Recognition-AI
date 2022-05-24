@@ -7,4 +7,9 @@ In order to execute this program, you will have to install the following: numpy,
 
 # How does it work?
 ## Neural Network
-The model consists of a neural network with 784 input nodes, one hidden layer with 24 nodes, and an output layer of 10 nodes.
+The neural network consists of 3 layers:
++ input-layer: 784 neurons  --> pixels of the 28\*28 image
++ hidden-layer: 24 neurons  
++ output-layer: 10 neurons  --> matching with the numbers (0 - 9)
+
+
