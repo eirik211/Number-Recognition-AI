@@ -28,5 +28,5 @@ Notations: <br/>
 
 Now we have 3 simpler equations to solve. <br/>
 
-![](https://latex.codecogs.com/svg.image?\color{white}\frac{\partial&space;C}{\partial&space;n}&space;=&space;2(output[x]&space;-&space;desiredOutput[x]))
+![](https://latex.codecogs.com/svg.image?\color{white}\frac{\partial&space;C}{\partial&space;n}&space;=&space;2(output[x]&space;-&space;desiredOutput[x])) <br/>
 ![](https://latex.codecogs.com/svg.image?\color{white}\frac{\partial&space;n}{\partial&space;z}&space;=&space;sigmoid'(z))
