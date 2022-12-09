@@ -64,7 +64,7 @@ $$\frac{\partial C}{\partial wy} = (\sum_{i=0}^{9} 2(o_{i} - desiredOutput_{i})s
 
 Subtract a fraction of this value from `wy`... 
 
-$$w = w - lr(\sum_{i=0}^{9} 2(o_{i} - desiredOutput_{i})sigmoid'(z_{i})nh)sigmoid'(zh)ni)$$
+$$w = w - lr(\sum_{i=0}^{9} 2(o_{i} - desiredOutput_{i})sigmoid'(z_{i})nh(sigmoid'(zh)ni)$$
 
 Repeat this procedure for every weight connecting the input- with the hidden-layer and we're done!
 With my configuration I do this 3 times for 50000 images each.
