@@ -8,7 +8,7 @@ def s(x):
     return 1 / (np.exp(-x) + 1)     
 
 
-""" partial-derivative of the sigmoid function """
+""" derivative of the sigmoid function """
 def ds(x):
     return s(x) * (1 - s(x))
 
